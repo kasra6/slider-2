@@ -1,0 +1,69 @@
+.slider{
+  position: relative;
+  overflow: hidden;
+}
+
+figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+figure img{
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+
+.controls{
+  position: relative;
+}
+
+.controls a{
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.controls a.next{
+  top: 300px;
+  right: 5px;
+}
+
+.controls a.prev{
+  top: 300px;
+  left: 5px;
+}
